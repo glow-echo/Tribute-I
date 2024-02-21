@@ -1,0 +1,132 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: var(--bgcolor);
+        border: 10px solid var(--border-color);
+        padding: 20px;
+        color: var(--normal-text-color);
+    }
+    
+     :root {
+        --bgcolor: #011638;
+        --border-color: #364156;
+        --normal-text-color: #eaeaea;
+        --bold-text-color: #ffffff;
+    }
+    /* code starts here  */
+    
+    .container {
+        max-width: 1100px;
+        /* border: 1px solid white; */
+        margin: auto;
+    }
+    /* header starts here */
+    
+    header {
+        margin: 50px 100px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .img-section img {
+        border-radius: 20px;
+    }
+    
+    .text-section {}
+    
+    .text-section h2 {
+        font-size: 50px;
+        color: var(--bold-text-color);
+    }
+    
+    .text-section p {
+        font-size: 30px;
+        color: var(--bold-text-color);
+        display: flex;
+        justify-content: end;
+    }
+    /* content starts here */
+    
+    .content-heading h3 {
+        font-size: 40px;
+        color: var(--bold-text-color);
+        margin-bottom: 20px;
+    }
+    
+    .content-text p {
+        font-size: 20px;
+        text-align: justify;
+        margin-bottom: 40px;
+    }
+    
+    .link-heading h3 {
+        font-size: 40px;
+        color: var(--bold-text-color);
+        margin-bottom: 20px;
+    }
+    
+    .link-text {
+        margin-left: 20px;
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 40px;
+    }
+    /* footer starts here */
+    
+    footer {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    
+    footer p a {
+        color: var(--bold-text-color);
+    }
+    /* media query */
+    /* Extra small devices (phones, 600px and down) */
+    
+    @media only screen and (max-width: 600px) {
+        header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 50px 50px 20px 50px;
+        }
+        .img-section img {
+            border-radius: 20px;
+        }
+        .text-section {}
+        .text-section h2 {
+            font-size: 50px;
+            color: var(--bold-text-color);
+            text-align: center;
+        }
+        .text-section p {
+            display: flex;
+            justify-content: center;
+        }
+        .content-heading h3 {
+            text-align: center;
+        }
+        .content-text p {
+            text-align: justify;
+        }
+        .link-heading h3 {
+            text-align: center;
+        }
+        .link-text {
+            /* text-align: justify; */
+        }
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
